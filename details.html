@@ -28,7 +28,7 @@
               <a href="categories.html" class="nav-link ">Categories</a>
             </li>
             <li class="nav-item px-2">
-              <a href="users.html" class="nav-link active ">Users</a>
+              <a href="users.html" class="nav-link ">Users</a>
             </li>
           </ul>
 
@@ -57,94 +57,88 @@
     </nav>
 
     <!-- HEADER -->
-    <header id="main-header" class="py-2 bg-warning text-white">
+    <header id="main-header" class="py-2 bg-primary text-white">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <h1><i class="fas fa-users"></i> Users</h1>
+            <h1> Post One</h1>
           </div>
         </div>
       </div>
     </header>
 
-    <!-- SEARCH -->
-    <section id="search" class="py-4 mb-4 bg-light">
+    <!-- ACTIONS -->
+    <section id="actions" class="py-4 mb-4 bg-light">
       <div class="container">
         <div class="row">
-            <div class="col-md-6 ml-auto">
-                <div class="input-group">
-                    <input placeholder="Search Users..." type="text" class="form-control">
-                    <div class="input-group-append">
-                        <button class="btn btn-warning">Search</button>
-                    </div>
-                </div>
-            </div>
+          <div class="col-md-3">
+            <a href="index.html" class="btn btn-light btn-block" >
+              <i class="fas fa-arrow-left"></i> Back To Dashboard
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="index.html" class="btn btn-success btn-block"  >
+              <i class="fas fa-check"></i> Save Changes
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="index.html" class="btn btn-danger btn-block"  >
+              <i class="fas fa-trash"></i> Delete Post
+            </a>
+          </div>
         </div>
       </div>
     </section>
 
-    
 
-    <!-- USERS  -->
-    <section id="users">
+    <!-- DETAILS  -->
+    <section id="details">
       <div class="container">
-        <div class="row">
-          <div class="col">
-            <div class="card">
-              <div class="card-header">
-                <h4>Latest Users</h4>
+          <div class="row">
+              <div class="col">
+                  <div class="card">
+                      <div class="card-header">
+                          <h4>Edit Post</h4>
+                      </div>
+                      <div class="card-body">
+                          <form action="">
+                            <div class="form-group">
+                                <label for="title">Title</label>
+                                <input type="text" class="form-control" value="Post One">
+                              </div>
+                              <div class="form-group">
+                                <label for="category">Category</label>
+                                <select class="form-control">
+                                  <option value="" selected>Web Development</option>
+                                  <option value="">Tech Gadgets</option>
+                                  <option value="">Business</option>
+                                  <option value="">Health & Welness</option>
+                                </select>
+                              </div>
+                              <div class="form-group">
+                                <label for="image">Upload Image</label>
+                                <div class="custom-file">
+                                  <input type="file" class="custom-file-input " id="image">
+                                  <label for="image" class="custom-file-label">Choose File</label>
+                                </div>
+                                <small class="form-text text-muted">Max Size 3mb</small>
+                              </div>
+                              <div class="form-group">
+                                <label for="body">Body</label>
+                                <textarea name="editor1" class="form-control">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis dolores nobis rem dolorem quas nam deleniti ad ea neque. Veniam possimus omnis provident. Molestiae commodi accusantium aliquam at ullam mollitia eveniet a. Aliquam consequatur sed qui ipsa provident soluta voluptate odio corporis necessitatibus. Officia illum dicta, quo ullam eaque atque.
+                                </textarea>
+                              </div>
+                          </form>
+                      </div>
+                  </div>
               </div>
-              <table class="table table-striped">
-                <thead class="thead-dark">
-                  <tr>
-                    <th>#</th>
-                    <th>Name</th>
-                    <th>Email</th>
-                    <th></th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>1</td>
-                    <td>John Doe</td>
-                    <td>test@email.com</td>
-                    <td>
-                      <a href="details.html" class="btn btn-secondary">
-                        <i class="fas fa-angle-double-right"></i> Details
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>2</td>
-                    <td>Harry White</td>
-                    <td>harry@ymail.com</td>
-                    <td>
-                      <a href="details.html" class="btn btn-secondary">
-                        <i class="fas fa-angle-double-right"></i> Details
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>3</td>
-                    <td>Mary Johnson</td>
-                    <td>mary@sick.com</td>
-                    <td>
-                      <a href="details.html" class="btn btn-secondary">
-                        <i class="fas fa-angle-double-right"></i> Details
-                      </a>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-              </div>
-              </div>
-              </div>
-              </div>
-              </section>
-
+          </div>
+      </div>
+    </section>
 
     <!-- FOOTER -->
-    <footer id="main-footer" class="bg-dark text-white mt-5 p-5">
+    <footer id="main-footer" class="  bg-dark text-white mt-5 p-5">
       <div class="container">
         <div class="row">
           <div class="col">
@@ -165,11 +159,13 @@ crossorigin="anonymous"></script>
   crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
   crossorigin="anonymous"></script> 
+  <script src="https://cdn.ckeditor.com/4.14.0/standard/ckeditor.js"></script>
 <script>
     //get the current year fot the copyright
     $('#year').text(new Date().getFullYear());
 
-    
+    //CKEDITOR
+    CKEDITOR.replace( 'editor1' );
 
 </script>
 </body>
